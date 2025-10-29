@@ -1,6 +1,6 @@
-/* BigStyle Menswear - Modern Stylesheet */
+/* BigStyle Menswear - Bold & Modern Stylesheet */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -9,21 +9,22 @@
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.7;
-    color: #1a1a1a;
-    background-color: #ffffff;
+    color: #e8e8e8;
+    background-color: #1a1a1a;
     font-weight: 400;
 }
 
-/* Navigation - Modern & Sleek */
+/* Navigation - Bold & Elegant */
 nav {
-    background-color: #000000;
-    padding: 1.2rem 0;
+    background-color: #0d1b2a;
+    padding: 1.3rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    border-bottom: 2px solid #d4af37;
 }
 
 nav ul {
@@ -38,27 +39,30 @@ nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-size: 0.95rem;
-    font-weight: 500;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
     padding: 8px 16px;
     transition: all 0.3s ease;
-    border-radius: 6px;
-    letter-spacing: 0.5px;
+    border-radius: 4px;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 nav ul li a:hover {
-    background-color: #0066ff;
+    background-color: #d4af37;
+    color: #0d1b2a;
     transform: translateY(-2px);
 }
 
-/* Header/Hero Section - Bold & Modern */
+/* Header/Hero Section - Bold with Gold Accent */
 .hero {
-    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 50%, #415a77 100%);
     color: white;
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 5rem 2rem;
     position: relative;
     overflow: hidden;
+    border-bottom: 4px solid #d4af37;
 }
 
 .hero::before {
@@ -68,43 +72,39 @@ nav ul li a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, #0066ff15 0%, transparent 100%);
+    background: radial-gradient(circle at 30% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 4.5rem;
     margin-bottom: 1rem;
     font-weight: 700;
-    letter-spacing: -1px;
+    letter-spacing: 2px;
     position: relative;
     z-index: 1;
+    color: #d4af37;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
     margin-bottom: 2rem;
     font-weight: 300;
     letter-spacing: 1px;
     position: relative;
     z-index: 1;
-    opacity: 0.9;
+    color: #e8e8e8;
 }
 
-/* Banner Image */
-.banner-image {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    display: block;
-    border-radius: 0;
-}
-
-/* Container - Clean & Spacious */
+/* Container - Dark & Sophisticated */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 4rem 2rem;
-    background-color: white;
+    background-color: #1a1a1a;
     min-height: 60vh;
 }
 
@@ -114,11 +114,13 @@ nav ul li a:hover {
 }
 
 .content-section h2 {
-    font-size: 2.8rem;
-    color: #000000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    color: #d4af37;
     margin-bottom: 1.5rem;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     position: relative;
     padding-bottom: 1rem;
 }
@@ -128,25 +130,28 @@ nav ul li a:hover {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 60px;
+    width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, #0066ff 0%, #0099ff 100%);
+    background: linear-gradient(90deg, #d4af37 0%, #c9a959 100%);
     border-radius: 2px;
 }
 
 .content-section h3 {
-    font-size: 1.6rem;
-    color: #1a1a1a;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    color: #d4af37;
     margin-top: 2.5rem;
     margin-bottom: 1rem;
     font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .content-section p {
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.05rem;
     margin-bottom: 1.5rem;
     line-height: 1.8;
-    color: #333333;
+    color: #e8e8e8;
 }
 
 /* Video Container */
@@ -154,9 +159,10 @@ nav ul li a:hover {
     max-width: 1000px;
     margin: 3rem auto;
     text-align: center;
-    border-radius: 12px;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    border: 2px solid #d4af37;
 }
 
 .video-container video {
@@ -165,35 +171,38 @@ nav ul li a:hover {
     display: block;
 }
 
-/* Opening Hours - Modern Card */
+/* Opening Hours - Elegant Card */
 .hours-box {
-    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%);
     padding: 2.5rem;
-    border-radius: 12px;
+    border-radius: 8px;
     margin: 2.5rem 0;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    border: 2px solid #d4af37;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
 }
 
 .hours-box h3 {
-    color: #000000;
+    font-family: 'Oswald', sans-serif;
+    color: #d4af37;
     margin-bottom: 1.5rem;
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
 }
 
 .hours-box p {
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.15rem;
     margin: 1rem 0;
-    color: #333333;
+    color: #e8e8e8;
 }
 
 .hours-box strong {
-    color: #0066ff;
+    color: #d4af37;
     font-weight: 600;
 }
 
-/* Products Grid - Modern Layout */
+/* Products Grid - Premium Layout */
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -202,17 +211,18 @@ nav ul li a:hover {
 }
 
 .product-item {
-    background-color: #ffffff;
-    border-radius: 12px;
+    background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%);
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid #f0f0f0;
+    border: 2px solid #415a77;
 }
 
 .product-item:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 12px 40px rgba(212, 175, 55, 0.3);
+    border-color: #d4af37;
 }
 
 .product-item img {
@@ -231,72 +241,82 @@ nav ul li a:hover {
 }
 
 .product-info h3 {
-    font-size: 1.5rem;
-    color: #000000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    color: #d4af37;
     margin-bottom: 0.8rem;
     font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .product-info p {
-    color: #666666;
+    font-family: 'Montserrat', sans-serif;
+    color: #c8c8c8;
     font-size: 1rem;
     line-height: 1.6;
 }
 
 /* Contact Section */
 .contact-info {
-    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%);
     padding: 2.5rem;
-    border-radius: 12px;
+    border-radius: 8px;
     margin: 2.5rem 0;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    border: 2px solid #d4af37;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
 }
 
 .contact-info h3 {
-    color: #000000;
+    font-family: 'Oswald', sans-serif;
+    color: #d4af37;
     margin-bottom: 1.2rem;
     font-weight: 600;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
 }
 
 .contact-info p {
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.05rem;
     margin: 0.8rem 0;
-    color: #333333;
+    color: #e8e8e8;
 }
 
 .social-link {
     display: inline-block;
-    background: linear-gradient(135deg, #0066ff 0%, #0099ff 100%);
-    color: white;
+    background: linear-gradient(135deg, #d4af37 0%, #c9a959 100%);
+    color: #0d1b2a;
     padding: 14px 32px;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 6px;
     margin-top: 1.5rem;
+    font-family: 'Oswald', sans-serif;
     font-weight: 600;
-    font-size: 1rem;
-    letter-spacing: 0.5px;
+    font-size: 1.05rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 102, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
 }
 
 .social-link:hover {
-    background: linear-gradient(135deg, #0052cc 0%, #0066ff 100%);
+    background: linear-gradient(135deg, #c9a959 0%, #d4af37 100%);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 102, 255, 0.4);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
 }
 
-/* Footer - Sleek & Modern */
+/* Footer - Sophisticated */
 footer {
-    background-color: #000000;
-    color: #ffffff;
+    background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%);
+    color: #e8e8e8;
     text-align: center;
     padding: 3rem 2rem;
     margin-top: 4rem;
-    border-top: 3px solid #0066ff;
+    border-top: 4px solid #d4af37;
 }
 
 footer p {
+    font-family: 'Montserrat', sans-serif;
     margin: 0.8rem 0;
     font-size: 0.95rem;
     opacity: 0.9;
@@ -305,11 +325,11 @@ footer p {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
     
     .hero p {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     
     nav ul {
@@ -339,6 +359,6 @@ html {
 
 /* Selection Color */
 ::selection {
-    background-color: #0066ff;
-    color: white;
+    background-color: #d4af37;
+    color: #0d1b2a;
 }
